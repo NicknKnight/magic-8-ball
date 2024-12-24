@@ -1,11 +1,21 @@
+#Create an list from 1-6
+my_list = [1, 2, 3, 4, 5, 6]
+
+#randomize list 
+import random
+random.shuffle(my_list)
+message = my_list[0]
+print(message)
+
 #Create if/then statement for the magic ball
 
-my_list = [1, 2, 3, 4, 5, 6]
-if my_list == 1:
+if message == 1 or message == 2:
     print("Yes")
-elif my_list == 2 or 3:
+elif message == 3:
     print("Maybe")
-elif my_list > 3 and my_list < 6:
+elif message >= 3 and message <= 6:
     print("Definetily not")
 else:
     print("Try again")
+
+
